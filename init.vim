@@ -7,9 +7,11 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'idris-hackers/idris-vim'
 Plug 'othree/yajs.vim'
 Plug 'easymotion/vim-easymotion'
+" Plug 'justinmk/vim-dirvish'
 
 call plug#end()
 
+" let loaded_netrwPlugin = 1
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 3
@@ -53,8 +55,8 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-nmap [[ ;tabprev<cr>
-nmap ]] ;tabnext<cr>
+nmap <silent> <leader>[ ;tabprev<cr>
+nmap <silent> <leader>] ;tabnext<cr>
 
 nnoremap ; :
 nnoremap : ;
