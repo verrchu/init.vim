@@ -35,7 +35,17 @@ let g:lightline = {
 colorscheme goodwolf
 
 filetype plugin on
+filetype indent on
 
+set noerrorbells
+set novisualbell
+
+set nobackup
+set nowritebackup
+set noswapfile
+
+set lazyredraw
+set wildmenu
 set cursorline
 set colorcolumn=80
 set noshowmode
@@ -43,12 +53,20 @@ set nocompatible
 syntax enable
 set list
 set number
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+" set tabstop=2
+" set shiftwidth=2
+" set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 set listchars=eol:#,tab:>·,trail:~,space:·
+
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 noremap <Up> <Nop>
 noremap <Down> <Nop>
