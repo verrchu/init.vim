@@ -4,6 +4,7 @@ Plug 'w0rp/ale'
 Plug 'unblevable/quick-scope'
 Plug 'itchyny/lightline.vim'
 Plug 'othree/yajs.vim'
+Plug 'vim-scripts/paredit.vim'
 
 call plug#end()
 
@@ -28,23 +29,25 @@ let g:lightline = {
 \   'tab': {
 \     'active': ['filename', 'modified'],
 \     'inactive': ['filename', 'modified']
-\   },
-\   'component_function': {
 \   }
 \ }
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],
+\   'haskell': ['ghc-mod']
 \ }
 
 let g:ale_open_list = 1
 let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
+let g:ale_echo_cursor = 0
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_filetype_changed = 1
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
+
+let g:paredit_electric_return = 0
 
 filetype plugin on
 filetype indent on
