@@ -5,6 +5,7 @@ Plug 'unblevable/quick-scope'
 Plug 'itchyny/lightline.vim'
 Plug 'othree/yajs.vim'
 Plug 'vim-scripts/paredit.vim'
+Plug 'kshenoy/vim-signature'
 
 call plug#end()
 
