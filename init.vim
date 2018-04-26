@@ -102,4 +102,6 @@ nmap <silent> <leader>] ;tabnext<cr>
 nnoremap ; :
 nnoremap : ;
 
+nmap <silent> <leader>gt ;GitGutterToggle<CR>
+
 inoremap <leader>y λ
