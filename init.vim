@@ -6,6 +6,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'othree/yajs.vim'
 Plug 'vim-scripts/paredit.vim'
 Plug 'kshenoy/vim-signature'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -72,6 +73,8 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set splitright
+
+set updatetime=100
 
 set colorcolumn=80
 set cursorline
