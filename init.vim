@@ -9,7 +9,7 @@ Plug 'kshenoy/vim-signature'
 
 call plug#end()
 
-colorscheme dark_eyes
+colorscheme spartan
 
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
@@ -63,17 +63,20 @@ set noswapfile
 
 set lazyredraw
 set wildmenu
-set cursorline
-set colorcolumn=80
 set noshowmode
 set nocompatible
-set list
 set number
+set nowrap
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
 set splitright
+
+set colorcolumn=80
+set cursorline
+highlight ColorColumn ctermbg=235
+highlight CursorLine ctermbg=235
 
 augroup quickfix
   autocmd!
