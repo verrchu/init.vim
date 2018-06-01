@@ -7,6 +7,7 @@ Plug 'othree/yajs.vim'
 Plug 'vim-scripts/paredit.vim'
 Plug 'kshenoy/vim-signature'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
