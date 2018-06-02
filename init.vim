@@ -100,9 +100,6 @@ noremap <Right> <Nop>
 nmap <silent> <leader>[ ;tabprev<cr>
 nmap <silent> <leader>] ;tabnext<cr>
 
-nnoremap ; :
-nnoremap : ;
-
 nmap <silent> <leader>gge ;GitGutterEnable<CR>
 nmap <silent> <leader>ggd ;GitGutterDisable<CR>
 
