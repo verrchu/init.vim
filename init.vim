@@ -20,15 +20,18 @@ Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-lastpat'
 Plug 'kana/vim-textobj-entire'
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'mhinz/vim-grepper'
 Plug 'rking/ag.vim'
 Plug 'elixir-editors/vim-elixir'
 Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'vim-erlang/vim-erlang-skeletons'
+Plug 'junegunn/fzf.vim'
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+Plug 'vim-erlang/vim-erlang-skeletons'
+Plug 'vim-erlang/vim-erlang-compiler'
+Plug 'vim-erlang/vim-erlang-runtime'
+Plug 'vim-erlang/vim-erlang-omnicomplete'
 call plug#end()
 
 colorscheme spartan
@@ -65,9 +68,13 @@ let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'haskell': ['ghc-mod'],
 \   'json': ['fixjson'],
+\   'python': ['flake8'],
 \   'erlang': ['erlc'],
 \   'elixir': ['mix']
 \ }
+
+let g:ale_python_flake8_executable = 'python3'
+let g:ale_python_flake8_options = '-m flake8'
 
 let g:ale_open_list = 1
 let g:ale_set_loclist = 1
@@ -147,6 +154,9 @@ nnoremap <silent> <leader>l :<C-u>ls<CR>
 
 nnoremap <silent> <leader>[ :tabprevious<CR>
 nnoremap <silent> <leader>] :tabnext<CR>
+
+nnoremap <silent> ]g :GitGutterNextHunk<CR>
+nnoremap <silent> [g :GitGutterPrevHunk<CR>
 
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>
