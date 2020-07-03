@@ -2,6 +2,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-abolish'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'kana/vim-textobj-user'
