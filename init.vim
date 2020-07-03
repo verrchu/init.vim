@@ -10,12 +10,16 @@ Plug 'kana/vim-textobj-entire'
 Plug 'rking/ag.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf.vim'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
 
 colorscheme spartan
+
+let g:ranger_replace_netrw = 1
 
 let g:lightline = {
 \   'colorscheme': 'seoul256',
