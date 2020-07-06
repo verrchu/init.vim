@@ -97,3 +97,5 @@ nnoremap <silent> <leader>] :tabnext<CR>
 
 nnoremap <silent> ]g :GitGutterNextHunk<CR>
 nnoremap <silent> [g :GitGutterPrevHunk<CR>
+
+tnoremap <Esc> <C-\><C-n>
