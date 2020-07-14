@@ -1,5 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'zivyangll/git-blame.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
@@ -99,3 +100,5 @@ nnoremap <silent> ]g :GitGutterNextHunk<CR>
 nnoremap <silent> [g :GitGutterPrevHunk<CR>
 
 tnoremap <Esc> <C-\><C-n>
+
+nnoremap <leader>s :<C-u>call gitblame#echo()<CR>
