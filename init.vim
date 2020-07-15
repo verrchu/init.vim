@@ -1,5 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'zivyangll/git-blame.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
@@ -102,3 +103,5 @@ nnoremap <silent> [g :GitGutterPrevHunk<CR>
 tnoremap <Esc> <C-\><C-n>
 
 nnoremap <leader>s :<C-u>call gitblame#echo()<CR>
+
+nmap <silent> gd <Plug>(coc-definition)
