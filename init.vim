@@ -93,6 +93,7 @@ noremap <Right> <Nop>
 nnoremap <silent><C-m> :<C-u>nohlsearch<CR><C-l>
 
 nnoremap <C-p> :<C-u>FZF<CR>
+nnoremap <leader>c :echo @%<CR>
 
 nnoremap <silent> <leader>[ :tabprevious<CR>
 nnoremap <silent> <leader>] :tabnext<CR>
