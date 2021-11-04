@@ -16,7 +16,9 @@ Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
 
 Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-lua/completion-nvim'
+" Plug 'nvim-lua/completion-nvim'
+" use fork with an important fix as plugin is unmaintained
+Plug 'rafaelsq/completion-nvim'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
@@ -79,7 +81,7 @@ local on_attach = function(client, bufnr)
   nvim_cmp.on_attach(client, bufnr)
 end
 
-local servers = { 'rust_analyzer', 'pyright' }
+local servers = { 'rust_analyzer', 'pyright', 'gopls' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
